@@ -1,0 +1,15 @@
+{
+    "School": [
+        {
+            "Name": "SJBHS",
+            "Principal": "Someone",
+            "Students": [
+                {
+                    "rno": 12,
+                    "name": "Kunal Kushwaha",
+                    "marks": 70
+                }
+            ]
+        }
+    ]
+}

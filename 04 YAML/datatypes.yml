@@ -1,0 +1,55 @@
+# String variable
+name: Sahil Naik 
+fruit: "Apple"
+Job: 'Devrel'
+
+# String with multiple lines
+bio: |
+Hello, My name is Sahil Naik
+I am a open source enthusiast
+
+# Writing a single line in multiple lines
+message: >
+all this 
+will be in
+one single line
+
+# it is same as
+message: all this will be in one single line
+
+number: 2992
+marks: 90.38
+booleanValue: No # we can also write n, N, false, False, FALSE
+# same for true -> y, Y, yes, Yes, YES
+
+# Specify the type
+
+#var: !!datatype value
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b1010
+octalNum: !!int 03246
+hex: !!int 0x54
+commaValues: !!int +540,000
+exponential numbers: 6.023E56
+
+#floating point numbers
+marks: !!float 81.00
+infinity: !!float .inf
+not a number: .nan
+
+#Boolean values
+boolValues: !!bool No
+
+#String
+message: !!str its a string
+
+#null
+surname: !!null Null # or null Null ~
+~: this is a null key
+
+# dates and time
+date: !!timestamp 2023-12-09
+india time: 2023-08-02T02:28:38.29 +5:30
+no time zone: 2023-08-02T02:28:38.29
