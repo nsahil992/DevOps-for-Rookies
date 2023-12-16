@@ -1,0 +1,35 @@
+"apple" : "I am a red fruit"
+1: "This is Sahil's roll number"
+
+---
+
+# Lists example
+- apple 
+- mango 
+- banana
+
+--- 
+
+# YAML is case sensitive
+- Apple 
+#(apple and Apple are two seperate things)
+
+# Proper indentation are important in YAML else they will give you error
+
+# Blocks in YAML
+cities: 
+- Pune
+- Mumbai
+- Nashik
+...
+
+# --- is used to tell YAML that they are different type of documents
+# ... tells YAML that document is finished here.
+
+# To write a block without the worry of indentation, we can do: 
+cities: [Pune, Mumbai, Nashik]
+---
+
+# Same can be done with key value pairs
+{mango: "A yellow fruit", age: 56}
+
