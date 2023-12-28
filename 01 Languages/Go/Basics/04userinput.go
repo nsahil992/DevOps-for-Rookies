@@ -6,7 +6,7 @@ func main(){
 	var age int
 	var like string
 	fmt.Println("Enter your name: ")
-	fmt.Scan(&user_name)
+	fmt.Scan(&user_name)           // fmt.Scan(&) is used to take input from the user 
 
 	fmt.Println("What is your age? ")
 	fmt.Scan(&age)
@@ -15,7 +15,7 @@ func main(){
 	fmt.Scan(&like)
 
 	fmt.Println("Hello, ", user_name)
-	fmt.Printf("%v is %v years old\n", user_name, age)
+	fmt.Printf("%v is %v years old\n", user_name, age) // %v is a place holder
 	fmt.Printf("%v likes %v\n", user_name, like)
 
 }
