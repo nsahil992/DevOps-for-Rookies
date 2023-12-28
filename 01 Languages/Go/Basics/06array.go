@@ -18,5 +18,5 @@ func main(){
 	fmt.Println(len(names))
 	names = append(names, "Phineas") // Phineas is inserted in array
 	fmt.Println(names)
-	fmt.Println(len(names))
+	fmt.Println(len(names)) // prints the new length of the 'names' array.
 }
