@@ -2,20 +2,13 @@ package main
 import ("fmt")
 
 func main(){
-	var user_name string
-	var age int
-	var like string
-	fmt.Println("Enter your name: ")
-	fmt.Scan(&user_name)           // fmt.Scan(&) is used to take input from the user 
-
-	fmt.Println("What is your age? ")
-	fmt.Scan(&age)
-
-	fmt.Println("What do you like? ")
-	fmt.Scan(&like)
-
-	fmt.Println("Hello, ", user_name)
-	fmt.Printf("%v is %v years old\n", user_name, age) // %v is a place holder
-	fmt.Printf("%v likes %v\n", user_name, like)
+	var a string 
+	var b int 
+	fmt.Println("Enter a string and a number: ")
+	count, err := fmt.Scanf("%s %d", &a, &b)
+	fmt.Println("count: ", count)
+	fmt.Println("error: ", err)
+	fmt.Println("a: ", a)
+	fmt.Println("b: ", b)
 
 }
