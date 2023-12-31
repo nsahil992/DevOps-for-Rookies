@@ -8,15 +8,30 @@ package main
 import ("fmt")
 
 func main() {
-	primes := [6]int{2, 3, 5, 7, 11, 13}
+	arr := []int {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
+	fmt.Println("Slice is: ")
+	slice_1 := arr[0:8]
+	fmt.Println(slice_1)
 
-	var s []int = primes[1:4] // will take start(3) and take the elements before end(7)
-	fmt.Println(s) // will print 3,5,7
+	// Slice from other slice
 
-	arr := []string{"a", "b", "c", "d", "e", "f", "g"}
-	s1 := arr[1:3]
-	s2 := arr[2:5]
+	sub_slice := slice_1[1:3]
+	fmt.Println("Sub Slice is: ")
+	fmt.Println(sub_slice)
 
-	fmt.Println(s1) // will print b,c
-	fmt.Println(s2) // will print c,d,e
+	// Changing value of slice
+
+	slice_1[0] = 11
+	fmt.Println("After modification of Slice: ")
+	fmt.Println(slice_1)
+
+	// Append 
+
+	slice_2 := []string{"Apple", "Mango", "Watermelon"}
+	fmt.Println(slice_2)
+	fmt.Println("The appended slice is: ")
+	fmt.Println(append(slice_2, "Custard apple", "Papaya"))
+	
+
+
 }
