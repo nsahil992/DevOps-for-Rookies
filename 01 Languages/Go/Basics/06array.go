@@ -2,21 +2,32 @@ package main
 import ("fmt")
 
 func main(){
-	var Languageslist [4]string // array
+	var fruits [3]string = [3]string{"Apple", "Mango", "Banana"}
+	fmt.Println(fruits)
+
+	marks := [3]int{10, 20, 30}   // shorthand way
+	fmt.Println(marks)
+
+	languages := [...]string{"Go", "Swift", "Rust"} //[...] is ellipse which calculates the elements present in the array
+	fmt.Println(languages)
+
+	fmt.Println(len(languages))  // Prints the length of languages array
+	fmt.Println(languages[0])   // [0] stands for index and will print the name of the language at index 0 i.e Go
 	
-	Languageslist[0] = "Go"
-	Languageslist[1] = "Rust"
-	Languageslist[2] = "Swift"
-	Languageslist[3] = "Julia"
+	marks[2] = 99
+	fmt.Println(marks)  // The value of marks array at index 2 i.e 30 will be changed to 99
 
-	fmt.Println(Languageslist) // prints array with 4 languages
-	fmt.Println(len(Languageslist)) // prints the length of array i.e 4
+	// Looping through an array
+	var grades [5]int = [5]int{80, 83, 96, 90, 75}
+	for i := 0; i < len(grades); i++ {
+	fmt.Println(grades[i])
+	}
 
-	// append inserts names in array
-	names := []string{"Sahil", "Courage"} //empty string
-	fmt.Println(names)
-	fmt.Println(len(names))
-	names = append(names, "Phineas") // Phineas is inserted in array
-	fmt.Println(names)
-	fmt.Println(len(names)) // prints the new length of the 'names' array.
+	// Multidimensional array
+
+	arr := [3][2]int{{10, 20}, {30, 40}, {50, 60}}
+	// [3] refers to the size of the array
+	// [2] refers to each element in a array
+	fmt.Println(arr[2][1])
+
 }
