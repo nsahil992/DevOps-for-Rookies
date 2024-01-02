@@ -1,14 +1,9 @@
 package main
 import("fmt")
+
+func greeting(a string) {
+	fmt.Println("Hey there,",a)
+}
 func main() {
-	greetuser() // we called the function
+	greeting("Sahil")
 }
-
-
-func greetuser(){ // greetuser is the name of the function
-	fmt.Println("Enter your name: ")
-	var username string
-	fmt.Scan(&username)
-	fmt.Println("Greetings for the day", username)
-}
-
