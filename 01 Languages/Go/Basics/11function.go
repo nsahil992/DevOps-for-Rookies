@@ -1,3 +1,5 @@
+// The function is always called in func main block and declared outside func main
+
 package main
 import("fmt")
 
@@ -13,7 +15,7 @@ func operations(a int, b int) (sum int, diff int) {
 	return
 }
 func main() {
-	greeting("Sahil")
-	sum, diff := operations(10, 9)
+	greeting("Sahil")  // Passed name
+	sum, diff := operations(10, 9) // values passed
 	println(sum," ",diff)
 }
