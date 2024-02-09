@@ -17,5 +17,5 @@ func main() {
 	}
 	elapsed := time.Since(start)
 	time.Sleep(2 * time.Second)
-	fmt.Println(a...: "Function took", elapsed)
+	fmt.Println("Function took", elapsed)
 }
