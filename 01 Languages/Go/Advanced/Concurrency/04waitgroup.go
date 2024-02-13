@@ -13,10 +13,9 @@ func calculateSquare(i int, wg *sync.WaitGroup) {
 
 func main() {
 	var wg sync.WaitGroup
-
 	start := time.Now()
 	wg.Add(10)
-	for i := 1; i <= 10000; i++ {
+	for i := 1; i <= 10; i++ {
 		go calculateSquare(i, &wg)   
 		
 	}
