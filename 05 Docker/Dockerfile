@@ -1,6 +1,8 @@
+# creating a base image
 FROM ubuntu
+
+MAINTAINER sahil naik <nsahil992@gmail.com>
 
 RUN apt-get update
 
-RUN apt-get install -y python3
-
+CMD ["echo", "Hello World from my docker image!"] 
